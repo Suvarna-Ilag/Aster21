@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-22T15:08:53 IST" name="Default suite" finished-at="2022-04-22T15:09:11 IST" duration-ms="18194">
+  <suite started-at="2022-04-23T13:22:04 IST" name="Default suite" finished-at="2022-04-23T13:22:20 IST" duration-ms="15489">
     <groups>
     </groups>
-    <test started-at="2022-04-22T15:08:53 IST" name="Default test" finished-at="2022-04-22T15:09:11 IST" duration-ms="18194">
+    <test started-at="2022-04-23T13:22:04 IST" name="Default test" finished-at="2022-04-23T13:22:20 IST" duration-ms="15489">
       <class name="main.testcase.KeywordTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:main.testcase.KeywordTest@4d02f94e]" started-at="2022-04-22T15:08:53 IST" name="setup" finished-at="2022-04-22T15:08:56 IST" duration-ms="2672" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:main.testcase.KeywordTest@50b5ac82]" started-at="2022-04-23T13:22:04 IST" name="setup" finished-at="2022-04-23T13:22:07 IST" duration-ms="2241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="tc_01()[pri:0, instance:main.testcase.KeywordTest@4d02f94e]" started-at="2022-04-22T15:08:56 IST" name="tc_01" finished-at="2022-04-22T15:09:11 IST" duration-ms="15470" status="PASS">
+        <test-method signature="tc_01()[pri:0, instance:main.testcase.KeywordTest@50b5ac82]" started-at="2022-04-23T13:22:07 IST" name="tc_01" finished-at="2022-04-23T13:22:20 IST" duration-ms="13205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_01 -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:main.testcase.KeywordTest@4d02f94e]" started-at="2022-04-22T15:09:11 IST" name="closeBrowser" finished-at="2022-04-22T15:09:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:main.testcase.KeywordTest@50b5ac82]" started-at="2022-04-23T13:22:20 IST" name="closeBrowser" finished-at="2022-04-23T13:22:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

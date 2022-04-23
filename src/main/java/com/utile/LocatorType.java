@@ -1,5 +1,5 @@
 
-package com.utility;
+package com.utile;
 
 public interface LocatorType {
 	

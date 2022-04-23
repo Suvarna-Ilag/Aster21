@@ -17,12 +17,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Keyword {
 	public static RemoteWebDriver driver;
 	public static WebDriverWait wait;
-	private static final Logger Log = Logger.getLogger(Keyword.class);
-
-	public static void log() {
-		PropertyConfigurator.configure("Log4j.properties");
-
-	}
+	private static final Logger LOG = Logger.getLogger(Keyword.class);
 
 	public static void openBrowser(String browserName) {
 
@@ -30,20 +25,20 @@ public class Keyword {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			Log.info("Chrome Browser is started");
+			LOG.info("Chrome Browser is started");
 			break;
 		case "ie":
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
-			Log.info("IE Browser is started");
+			LOG.info("IE Browser is started");
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			driver = new ChromeDriver();
-			Log.info("Firefox Browser is started");
+			LOG.info("Firefox Browser is started");
 			break;
 		default:
-			Log.error("Invalid browser name " + browserName);
+			LOG.error("Invalid browser name " + browserName);
 			break;
 		}
 		wait = new WebDriverWait(driver, 30000);
@@ -53,7 +48,7 @@ public class Keyword {
 	public static void launchURL(String url) {
 		driver.get(url);
 		driver.manage().window().maximize();
-		Log.info("launching url:" + url);
+		LOG.info("launching url:" + url);
 	}
 
 	private static WebElement getWebElement(String locator, String locatorType) {
@@ -80,7 +75,7 @@ public class Keyword {
 			element = driver.findElement(By.tagName(locator));
 
 		} else {
-			Log.error("Invalid locatorType " + locatorType);
+			LOG.error("Invalid locatorType " + locatorType);
 		}
 
 		return element;
